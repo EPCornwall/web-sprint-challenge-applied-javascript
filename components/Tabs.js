@@ -15,7 +15,7 @@ const tabAttach = document.querySelector('.topics')
 
 axios.get('https://lambda-times-api.herokuapp.com/topics')
 .then(results =>{
-    console.log(results)
+    //console.log(results)
     results.data.topics.forEach((item) =>{
     const topicDiv = document.createElement('div')
     topicDiv.className= 'tab'
